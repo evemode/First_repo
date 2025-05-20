@@ -1,4 +1,12 @@
-my_list = list((1,2,3,4,5))
-print(my_list)
-#test test
-#test commit from terminal!
+def factorial(n):
+    if n < 2:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+def number_of_groups(n, k):
+    return factorial(n) / (factorial(n-k) * factorial(k))
+    
+    
+print(number_of_groups(10, 1))
